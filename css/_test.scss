@@ -1,0 +1,30 @@
+
+h1{
+    @include mq(sp){
+        display: none;
+    }
+    font-size: large;
+    font-family: 'Cinzel', serif;
+}
+
+
+.bg_obj_header_1 {
+    @include position(-9%, auto, auto, 10%);
+    width: 500px;
+  }
+  
+
+  .mainvisual {
+    position: relative;
+    @include flex(center, center);
+  }
+
+  
+//   <picture class="header_pattern_left">
+//         <source
+//           srcset="image/header_pattern_left_sp.png"
+//           media="(max-width: 480px)"
+//         />
+//         <img src="image/header_pattern_left.png" alt="装飾" />
+//       </picture>
+

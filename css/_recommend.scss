@@ -1,0 +1,174 @@
+$base-color: #f59300;
+
+#recommend {
+    .pc {
+        @include mq(tab) {
+            display: none;
+        }
+    }
+    .inner {
+        .title {
+            padding: 80px 0 60px 0;
+            text-align: center;
+            width: 100%;
+            @include mq(tab) {
+                width: 80%;
+                margin: 0 auto;
+            }
+            h2 {
+                font-size: 1.2rem;
+                padding-top: 1rem;
+            }
+            img {
+                display: block;
+                height: 28px;
+                @include mq(sp) {
+                    height: 20px;
+                }
+                margin: 0 auto;
+            }
+        }
+    }
+    .col-4 {
+        @include flex(space-between, flex-start);
+        @include mq(tab) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .col {
+            width: 25%;
+            margin: 0 auto;
+            padding: 0 1rem;
+            @include mq(tab) {
+                width: 90%;
+            }
+            img {
+                border: 3px solid $base-color;
+                height: 200px;
+                display: block;
+                margin: 0 auto;
+                object-fit: cover;
+                @include mq(tab) {
+                    width: 99%;
+                    height: 250px;
+                }
+            }
+        }
+        .img-content {
+            background: $base-color;
+        }
+        .img-title {
+            height: 65px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            @include flex(center, center);
+
+            p {
+                text-align: center;
+            }
+        }
+        .img-text {
+            padding-top: 1rem;
+            font-size: 0.8rem;
+            line-height: 18pt;
+        }
+    }
+    .about {
+        margin-top: 80px;
+        width: 100%;
+        .about-body {
+            background-color: #f5f5f5;
+        }
+        .title {
+            
+            @include flex();
+            flex-direction: column;
+            img{
+                height: 28px;
+                @include mq(sp) {
+                    height: 20px;
+                }
+            }
+            
+            h2{
+               font-size: 1.2rem;
+               @include mq(sp) {
+                font-size: 0.8rem;
+            } 
+            }
+            span{
+                margin-top: -12px;
+            }
+            .horizon{
+                width: 80%;
+                padding-bottom: 1rem;
+                @include mq(tab) {
+                    width: 100%;
+                }
+                display: flex;  /* 横並びにする */
+                align-items: center;  /* 垂直方向に中央 */
+                text-align: center;  /* 文字のセンタリング(複数行になったとき用) */
+                /* 共通部分はまとめる */
+                &::before,
+                &::after{
+                  content:"";
+                  flex-grow: 1;  /* 線の伸び率 */
+                  border-bottom: 1px solid $base-color;
+                }
+               
+                /* 左側の線 */
+                &::before{
+                  margin-right: 10px;  /* 線と文字の間のスペース */
+                  padding-left: 15px;  /* 線の長さが、最低でも15px以上になるように余白をとる */
+                }
+               
+                /* 右側の線 */
+                &::after{
+                  margin-left: 10px;  /* 線と文字の間のスペース */
+                  padding-right: 15px;  /* 線の長さが、最低でも15px以上になるように余白をとる */
+                }
+              }
+        }
+        
+         
+         
+
+
+
+        .button-wrap{
+            padding-top: 50px;
+            .col-3{
+                @include flex(center, center);
+                padding: 1rem;
+                @include mq(tab) {
+                    flex-direction: column;
+                    padding: 0;
+                }
+                font-weight: bold;
+                color:#fff;
+                a{
+                    @include flex(space-between,center);
+                    padding: 0 3rem;
+                    @include mq(tab-l) {
+                        padding: 0 1rem;
+                    }
+
+                    background:$base-color;
+                    width: 300px;
+                    @include mq(tab) {
+                        width: 70%;
+                        padding: 0 3rem;
+                    }
+                    @include mq(sp) {
+                        padding: 0 1rem;
+                        margin: 0.5rem;
+                    }
+                    height: 60px;
+                    margin: 1rem;
+                    border-radius:20px;
+                }
+            }
+        }
+    }
+}
