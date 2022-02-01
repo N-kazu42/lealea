@@ -28,7 +28,20 @@
                 </div>
             </div>
         </div>
+        <div class="nav-wrapper-sp">
+            <div class="body">
+                <ul class="f-ci">
+                    <label class="menu-close"><span></span></label>
+                    <li><a href="#">CONTENTS</a></li>
+                    <li><a href="#">5 STEP OF DIET</a></li>
+                    <li><a href="#">FLOW</a></li>
+                    <li><a href="#">PRICE</a></li>
+                    <li><a href="#">VOICE</a></li>
+                    <li><a href="#">NUTRITIONIST</a></li>
+                </ul>
 
+            </div>
+        </div>
     </header>
     <section id="mainvisual">
         <div class="nav-wrapper">
@@ -293,15 +306,30 @@
                             <p>お客様の食生活や生活習慣を、レアライフ独自の問診票 を用いて、これまでの経緯を伺います。<br><br>
                                 お客様の目的やライフスタイルに合った、無理なく最適なプランを一緒にプランニングします。</p>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </section>
 
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('.menu-close').on('click', function () {
+                $('.nav-wrapper-sp').removeClass('show');
+                $('.menu-btn').removeClass('active');
+            });
+        });
+        $(function () {
+            $('.hamburger-menu').on('click', function () {
+                $('.menu-btn').toggleClass('active');
+                $('.nav-wrapper-sp').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 
 </html>
