@@ -1,3 +1,8 @@
+$base-color: #f59300;
+$second-color: #ffb400;
+$bg-gray:#f7f7f7;
+
+
 //ブレイクポイントの種類を定義
 
 $breakpoint: (
@@ -59,4 +64,18 @@ img {
 }
 .f-ug{
   font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+}
+
+
+@mixin gradient($startColor:#FAD126, $endColor:#FF544F, $orientation: ttob) {
+	background: $startColor;
+	@if $orientation == ttob {
+		background: -webkit-linear-gradient(top, #{$startColor} 0%, #{$endColor} 100%);
+		background: linear-gradient(to bottom, #{$startColor} 0%,  #{$endColor} 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startColor}', endColorstr=' #{$endColor}', GradientType=0);
+	} @else if $orientation == ltor {
+		background: -webkit-linear-gradient(right, #{$startColor} 0%, #{$endColor} 100%);
+		background: linear-gradient(to right, #{$startColor} 0%,  #{$endColor} 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startColor}', endColorstr=' #{$endColor}', GradientType=1);
+	}
 }
