@@ -44,6 +44,9 @@
         height: 100%;
         img {
             height: 100%;
+            @include mq(span) {
+                height: 45px;
+            }
         }
         @include mq(tab) {
             width: 25%;
