@@ -3,6 +3,9 @@
     @include mq(tab-l) {
         padding-top: 50px;
     }
+    @include mq(sp) {
+        padding-top: 0;
+    }
     .contents-inner{
         background-color: $bg-gray;
         margin: 100px 0 0 0;
@@ -34,6 +37,9 @@
             padding: 4rem;
             gap:3rem;
         }
+        @include mq(sp){
+            padding: 2rem;
+        }
         gap: 2rem;
         width: 100%;
         img {
@@ -54,7 +60,7 @@
            border-radius: 30px;
            @include mq(sp) {
                padding: 1rem 2rem;
-               font-size: 3vw;
+               font-size: 3.8vw;
            }
         }
     }

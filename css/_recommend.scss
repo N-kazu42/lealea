@@ -65,6 +65,9 @@
             @include mq(tab-l) {
                 font-size:3.2vw;
             }
+            @include mq(sp) {
+                font-size:4.5vw;
+            }
             @include flex(center, center);
 
             p {
@@ -77,6 +80,10 @@
             line-height: 18pt;
             @include mq(tab-l) {
                 font-size:2.5vw;
+                padding-bottom:3rem;
+            }
+            @include mq(sp) {
+                font-size:3.2vw;
                 padding-bottom:3rem;
             }
         }
