@@ -14,13 +14,26 @@
 
         .nav_telphon_button {
             //ヘッダーロゴ横のボタン
-            display: flex;
+            @include flex(space-between,center);
+            img{
+                height: 25px;
+                padding-right: 1rem;
+                @include mq(tab){
+                    height: 3vw;
+                }
+            }
+            color: #fff;
             a {
+                @include flex(center,center);
                 width: 250px;
-                padding: 0 10px;
+                padding: 1rem 10px;
+                background-color: $base-color;
+                font-size: 1.2rem;
+                margin-left: 1rem;
                 @include mq(tab) {
-                    padding: 0 3px;
+                    height: 45px;
                     width: 30vw;
+                    font-size: 2vw;
                 }
             }
         }
@@ -42,8 +55,12 @@
     // ハンバーガーメニュー
     .hamburger-menu {
         display: none;
+        background-color: $base-color;
         @include mq(tab) {
             display: block;
+            height: 45px;
+            width: 45px;
+            margin-left: 0.5rem;
         }
     }
     .menu-btn {
@@ -157,8 +174,8 @@
         .body{
             position:fixed;
             background-color: $base-color;
-            width: 80vw;
-            height: 80vh;
+            width: 100vw;
+            height: 100vh;
 
         }
         .menu-btn.active {
