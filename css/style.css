@@ -529,7 +529,7 @@ img {
 @media screen and (max-width: 480px) {
   .header .nav_logo {
     width: 30%;
-    height: auto;
+    height: 45px;
     padding: 0;
   }
 }
