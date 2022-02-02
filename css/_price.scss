@@ -1,0 +1,64 @@
+#price .inner {
+    margin-bottom: 120px;
+    padding-top: 60px;
+    @include mq(sp) {
+        margin-bottom: 120px;
+        }
+}
+.price__title {
+    max-width: 268px;
+    margin: 0 auto 60px;
+    @include mq(sp) {
+        margin: 0 auto 35px;
+        }
+}
+.price__course {
+    margin-bottom: 65px;
+    padding: 0 16px;
+    @include mq(sp) {
+        margin-bottom: 35px;
+        }
+}
+.price__course-pc {
+    display: block;
+    @include mq(tab) {
+        display: none;
+        }
+}
+.price__course-sp {
+    display: none;
+    @include mq(tab) {
+        max-width: 650px;
+        margin: 0 auto;
+        display: block;
+        }
+}
+.price__comparison-table {
+    margin-bottom: 78px;
+    overflow-x: scroll;
+    img {
+        min-width: 880px;
+    }
+    @include mq(sp) {
+        margin-bottom: 45px;
+        }
+}
+.price-btn {
+        text-align: center;
+        a{
+           @include gradient;
+           padding: 2rem 3rem;
+           color: #fff;
+           font-weight: bold;
+           font-size: 1.5em;
+           border-radius: 30px;
+           @include mq(tab) {
+            padding: 2rem 3rem;
+            font-size: 3.5vw;
+            }
+            @include mq(sp) {
+                padding: 1rem 1rem;
+                font-size: 4vw;
+            }
+        }
+}

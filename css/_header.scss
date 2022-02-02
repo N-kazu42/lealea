@@ -61,7 +61,7 @@
     // ハンバーガーメニュー
     .hamburger-menu {
         display: none;
-        background-color: $base-color;
+        background-color: $hamburger-color;
         @include mq(tab) {
             display: block;
             height: 45px;
@@ -135,7 +135,7 @@
         justify-content: center;
         align-items: center;
         z-index: 90;
-        background-color: $base-color;
+        background-color: $hamburger-color;
         & span,
         & span:before,
         & span:after {
@@ -179,7 +179,7 @@
     .nav-wrapper-sp {
         .body{
             position:fixed;
-            background-color: $base-color;
+            background-color: $hamburger-color;
             width: 100vw;
             height: 100vh;
 
@@ -237,9 +237,9 @@
     }
 }
 .top-visual {
-    background: url(/image/header/header_main_img.png) no-repeat;
+    background: url(../image/header/header_main_img.png) no-repeat;
     @include mq(sp) {
-        background: url(/image/header/header_main_img_sp.png) no-repeat;
+        background: url(../image/header/header_main_img_sp.png) no-repeat;
         height: 140vw;
         background-size: cover;
         position: relative;

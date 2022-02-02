@@ -1,7 +1,7 @@
 $base-color: #f59300;
 $second-color: #ffb400;
 $bg-gray:#f7f7f7;
-
+$hamburger-color: #6c6c6c;
 
 //ブレイクポイントの種類を定義
 
@@ -78,4 +78,10 @@ img {
 		background: linear-gradient(to right, #{$startColor} 0%,  #{$endColor} 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$startColor}', endColorstr=' #{$endColor}', GradientType=1);
 	}
+}
+
+
+// 岩尾追加
+html {
+  scroll-behavior: smooth;
 }

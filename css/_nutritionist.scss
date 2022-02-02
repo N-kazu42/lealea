@@ -1,0 +1,57 @@
+#nutritionist .inner {
+    padding: 60px 16px 144px;
+}
+.nutritionist__title {
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.nutritionist__text {
+    max-width: 642px;
+    margin: 57px auto 84px;
+    h3 {
+        margin-bottom: 42px;
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+    p {
+        line-height: 1.5;
+        padding-bottom: 1.2rem;
+    }
+}
+.nutritionist__introduction {
+    h3 {
+        font-size: 2rem;
+        color: $base-color;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    span {
+        margin-bottom: 40px;
+        display: block;
+        text-align: center;
+    }
+}
+.nutritionist__img {
+    display: flex;
+    justify-content:space-around;
+    margin: 0 auto;
+    max-width:850px;
+    img {
+        height: 306px;
+        padding-left:16px ;
+    }
+    img:first-child {
+        margin-right: -16px;
+        padding-left:0 ;
+    }
+}
+@media screen and ( max-width:845px ) {
+    .nutritionist__img {
+    flex-wrap:wrap;
+    img {
+        padding-top: 16px;
+    }
+    }
+}

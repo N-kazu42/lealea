@@ -1,0 +1,118 @@
+.sec__flow {
+    position: relative;
+    padding-top: 100px;
+}
+.flow--wrap {
+    background-color: $bg-gray;
+    padding: 80px 16px;
+    // margin-top: 100px;
+    margin-bottom: 34px;
+    text-align: center;
+
+    @include mq(tab) {
+        padding: 70px 16px;
+        }
+        @include mq(sp) {
+            padding: 60px 16px;
+            }
+}
+.flow__title {
+    width: 268px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    @include mq(tab) {
+        top: 4%;
+        margin-bottom: 0;
+        }
+        @include mq(sp) {
+            top: 4%;
+            margin-bottom: 0;
+            }
+}
+.flow__wrap {
+    background-color:#fff;
+    border-radius: 30px;
+    padding: 60px 40px;
+    @include mq(tab) {
+        padding: 60px 16px;
+        }
+}
+.flow__contents {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-bottom: 95px;
+    @include mq(tab) {
+        display: block;
+        }
+}
+.flow__contents-img  {
+    flex-basis: 46%;
+    max-width: 400px;
+    margin-right: 5%;
+    @include mq(tab) {
+        flex-basis: 100%;
+        max-width: 80%;
+        margin: 0 auto 24px;
+        }
+        @include mq(sp) {
+            max-width: 100%;
+        }
+}
+.flow__contents-text {
+    flex-basis:54%;
+    text-align: left;
+    h3 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        @include mq(tab) {
+        text-align: center;
+        }   
+        @include mq(sp) {
+            font-size: 19px;
+            }   
+    }
+    p {
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 1.5;
+        @include mq(tab) {
+            margin-bottom: 60px;
+            }
+            @include mq(sp) {
+                margin-bottom: 40px;
+                }
+    }
+}
+
+.flow-btn{
+    text-align: center;
+    a{
+       @include gradient;
+       padding: 1rem 2.5vw;
+       color: #fff;
+       font-weight: bold;
+       font-size: unquote('min(2vw, 19px)');
+       border-radius: 30px;
+       @include mq(tab) {
+        padding: 2rem 2rem;
+        font-size: unquote('max(2.5vw, 18px)');
+        }
+        @include mq(sp) {
+            padding: 1rem 1rem;
+            font-size: unquote('max(3.5vw, 11px)');
+        }
+    }
+}
+.flow__step {
+    @include mq(tab-l) {
+        overflow-x: scroll;
+    }
+    img {
+        min-width: 820px;
+    }
+}

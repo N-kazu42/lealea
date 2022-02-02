@@ -1,0 +1,58 @@
+.sec__footer {
+    background-color: #6c6c6c;
+    padding: 60px 0;
+    height: 500px;
+    text-align: center;
+    small {
+        font-size: 13px;
+        color: #fff;
+    }
+}
+.footer__logo {
+    width: 164px;
+    margin: 0 auto 43px;
+}
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    li {
+        position: relative;
+        padding: 0 24px;
+        font-size: 15px;
+        color: #fff;
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #fff;
+        }
+        &:last-child::after
+        {
+            display: none;
+        }
+    }
+    @include mq(tab) {
+        display: block;
+        li {
+            margin-bottom: 12px;
+            &::after {
+                content: none;
+            }
+        }
+    }
+}
+.footer__sns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+.footer__sns-logo {
+    text-align: center;
+    margin: 0 12px;
+    img {
+        width: 40px;
+    }
+}

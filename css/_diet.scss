@@ -1,0 +1,40 @@
+#diet .inner {
+    padding-top: 60px;
+}
+.diet__title {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    // img {
+    //     width: 100%;
+    // }
+
+}
+.diet__beforafter-pc {
+    margin-bottom: 40px;
+    padding: 0 16px;
+    display: block;
+    @include mq(sp) {
+        display: none;
+        }
+}
+.diet__beforafter-sp {
+    margin-bottom: 40px;
+    padding: 0 16px;
+    display: none;
+    @include mq(sp) {
+        display: block;
+        }
+}
+.diet__result {
+    text-align: center;
+    margin-bottom: 145px;
+    padding: 0 16px;
+    img:first-child {
+        width: 236px;
+        margin-bottom: 30px;
+        @include mq(sp) {
+            width: 140px;
+            }
+    }
+}
