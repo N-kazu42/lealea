@@ -33,7 +33,7 @@
             @include flex(center, center);
             color: #fff;
             background-color: $second-color;
-            font-size: 2rem;
+           
             font-weight: bold;
             height: 60px;
             @include mq(tab) {
@@ -44,7 +44,19 @@
                 font-size: 3.3vw;
                 height: 13vw;
             }
-            
+            h2{
+                width: 80%; 
+                font-size: 2rem;
+                @include mq(tab) {
+                    font-size: 3vw;
+                    
+                }
+                @include mq(sp) {
+                    font-size: 3.3vw;
+                   
+                }
+                
+            }
             img {
                 height: 150%;
                 padding-right: 1rem;

@@ -1453,7 +1453,6 @@ html {
   -ms-flex-align: center;
   color: #fff;
   background-color: #ffb400;
-  font-size: 2rem;
   font-weight: bold;
   height: 60px;
 }
@@ -1469,6 +1468,23 @@ html {
   #steps .steps-title {
     font-size: 3.3vw;
     height: 13vw;
+  }
+}
+
+#steps .steps-title h2 {
+  width: 80%;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #steps .steps-title h2 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #steps .steps-title h2 {
+    font-size: 3.3vw;
   }
 }
 
