@@ -10,6 +10,9 @@
     .inner {
         height: 60px;
         width: 100%;
+        @include mq(tab) {
+            height: 45px;
+        }
         @include flex();
 
         .nav_telphon_button {
@@ -21,6 +24,9 @@
                 @include mq(tab){
                     height: 3vw;
                     padding-right: 0.5rem;
+                }
+                @include mq(sp) {
+                    padding-right: 2px;
                 }
             }
             color: #fff;
@@ -35,6 +41,10 @@
                     height: 45px;
                     width: 30vw;
                     font-size: 2vw;
+                    padding: 0 5px;
+                }
+                @include mq(sp) {
+                    font-size: 2.5vw;
                 }
                 
             }
@@ -42,20 +52,21 @@
     }
     .nav_logo {
         height: 100%;
-        img {
-            height: 100%;
-            @include mq(sp) {
-                height: 45px;
-            }
-        }
         @include mq(tab) {
             width: 25%;
-            padding: 0.5rem;
+           
         }
         @include mq(sp) {
-            width: 30%;
-            height: 45px;
+            width: auto;
+            height: auto;
             padding: 0;
+        }
+        img {
+            height: 100%;
+            
+            // @include mq(sp) {
+            //     height: 33px;
+            // }
         }
     }
     // ハンバーガーメニュー
