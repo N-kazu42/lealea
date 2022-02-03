@@ -63,9 +63,9 @@
         img {
             height: 100%;
             
-            // @include mq(sp) {
-            //     height: 33px;
-            // }
+            @include mq(sp) {
+                height: auto;
+            }
         }
     }
     // ハンバーガーメニュー

@@ -555,6 +555,12 @@ html {
   height: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .header .nav_logo img {
+    height: auto;
+  }
+}
+
 .header .hamburger-menu {
   display: none;
   background-color: #6c6c6c;
