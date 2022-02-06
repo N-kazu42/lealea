@@ -28,6 +28,9 @@
         &-content {
             padding: 2rem;
             margin-bottom: 3rem;
+            @include mq(sp){
+                margin-bottom: 0;
+            }
         }
         &-title {
             @include flex(center, center);

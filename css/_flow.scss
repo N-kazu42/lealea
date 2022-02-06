@@ -6,15 +6,17 @@
     background-color: $bg-gray;
     padding: 80px 16px;
     // margin-top: 100px;
-    margin-bottom: 34px;
+    margin-bottom: 64px;
     text-align: center;
 
     @include mq(tab) {
         padding: 70px 16px;
+        margin-bottom: 40px;
         }
-        @include mq(sp) {
-            padding: 60px 16px;
-            }
+    @include mq(sp) {
+        padding: 60px 0;
+        margin-bottom: 16px;
+        }
 }
 .flow__title {
     width: 268px;
@@ -38,6 +40,9 @@
     padding: 60px 40px;
     @include mq(tab) {
         padding: 60px 16px;
+        }
+    @include mq(sp) {
+        padding: 60px 0;
         }
 }
 .flow__contents {
@@ -85,10 +90,10 @@
             }
             @include mq(sp) {
                 margin-bottom: 40px;
+                padding: 0 16px;
                 }
     }
 }
-
 .flow-btn{
     text-align: center;
     a{
@@ -96,21 +101,24 @@
        padding: 1rem 2.5vw;
        color: #fff;
        font-weight: bold;
-       font-size: unquote('min(2vw, 19px)');
+       font-size: unquote('min(2vw, 24px)');
        border-radius: 30px;
        @include mq(tab) {
         padding: 2rem 2rem;
-        font-size: unquote('max(2.5vw, 18px)');
+        font-size: unquote('max(3.5vw, 18px)');
         }
         @include mq(sp) {
             padding: 1rem 1rem;
-            font-size: unquote('max(3.5vw, 11px)');
+            font-size: unquote('max(4vw, 12.8px)');
         }
     }
 }
 .flow__step {
-    @include mq(tab-l) {
+    // @include mq(tab-l) {
         overflow-x: scroll;
+    // }
+    @include mq(sp) {
+        padding: 0 8px;
     }
     img {
         min-width: 820px;

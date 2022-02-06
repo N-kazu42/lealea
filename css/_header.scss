@@ -7,17 +7,33 @@
         height: 60px;
         padding: 0.5rem;
     }
+    @include mq(sp) {
+        height: 100px;
+        padding: 0.5rem;
+    }
+
     .inner {
         height: 60px;
         width: 100%;
+        @include flex();
         @include mq(tab) {
             height: 45px;
         }
-        @include flex();
+        @include mq(sp) {
+            justify-content:flex-end;
+            flex-direction: column;
+            height: 100px;
+            padding: 0.5rem 0;
+        }
+
 
         .nav_telphon_button {
             //ヘッダーロゴ横のボタン
             @include flex(space-between,center);
+            @include mq(sp) {
+                width: 100%;
+                height: 50%;
+            }
             img{
                 height: 25px;
                 padding-right: 1rem;
@@ -44,7 +60,9 @@
                     padding: 0 5px;
                 }
                 @include mq(sp) {
-                    font-size: 2.5vw;
+                    font-size: 3.3vw;
+                    width: 43%;
+                    margin-left: 5px;
                 }
                 
             }
@@ -57,14 +75,15 @@
            
         }
         @include mq(sp) {
-            height: auto;
+            height: 50%;
             padding: 0;
         }
         img {
             height: 100%;
             
             @include mq(sp) {
-                height: auto;
+                height: 100%;
+                width: auto;
             }
         }
     }
@@ -248,8 +267,14 @@
 }
 .top-visual {
     background: url(../image/header/header_main_img.png) no-repeat;
+    .sp-img{
+        display:none;
+        @include mq(sp){
+            display: block;
+        }
+    }
     @include mq(sp) {
-        background: url(../image/header/header_main_img_sp.png) no-repeat;
+        background: none;
         height: 140vw;
         background-size: cover;
         position: relative;

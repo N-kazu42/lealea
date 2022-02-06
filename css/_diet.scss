@@ -1,26 +1,39 @@
 #diet .inner {
     padding-top: 60px;
+    margin-bottom: 120px;
+    @include mq(tab) {
+        padding-top: 16px;
+        margin-bottom: 80px;
+        }
+    @include mq(sp) {
+        padding-top: 0px;
+        margin-bottom: 64px;
+        }
 }
 .diet__title {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 16px;
-    // img {
-    //     width: 100%;
-    // }
+    @include mq(sp) {
+        padding: 0 8px;
+        }
 
 }
 .diet__beforafter-pc {
     margin-bottom: 40px;
     padding: 0 16px;
     display: block;
+    @include mq(tab) {
+        padding: 0;
+        }
     @include mq(sp) {
         display: none;
         }
 }
 .diet__beforafter-sp {
     margin-bottom: 40px;
-    padding: 0 16px;
+    // padding: 0 16px;
+    padding: 0;
     display: none;
     @include mq(sp) {
         display: block;
@@ -28,8 +41,10 @@
 }
 .diet__result {
     text-align: center;
-    margin-bottom: 145px;
     padding: 0 16px;
+    @include mq(sp) {
+        padding: 0;
+        }
     img:first-child {
         width: 236px;
         margin-bottom: 30px;

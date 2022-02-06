@@ -1,11 +1,13 @@
 .sec__footer {
     background-color: #6c6c6c;
     padding: 60px 0;
-    height: 500px;
     text-align: center;
     small {
         font-size: 13px;
         color: #fff;
+    }
+    @include mq(sp) {
+        padding: 60px 0 40px 0;
     }
 }
 .footer__logo {
@@ -47,7 +49,13 @@
 .footer__sns {
     display: flex;
     justify-content: center;
-    margin-bottom: 130px;
+    margin-bottom: 96px;
+    @include mq(tab) {
+        margin-bottom: 72px;
+    }
+    @include mq(sp) {
+        margin-bottom: 48px;
+    }
 }
 .footer__sns-logo {
     text-align: center;

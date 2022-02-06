@@ -1,13 +1,16 @@
 #price .inner {
-    margin-bottom: 120px;
+    margin-bottom: 128px;
     padding-top: 60px;
+    @include mq(tab) {
+        margin-bottom: 96px;
+        }
     @include mq(sp) {
-        margin-bottom: 120px;
+        margin-bottom: 48px;
         }
 }
 .price__title {
     max-width: 268px;
-    margin: 0 auto 60px;
+    margin: 0 auto 48px;
     @include mq(sp) {
         margin: 0 auto 35px;
         }
@@ -17,6 +20,7 @@
     padding: 0 16px;
     @include mq(sp) {
         margin-bottom: 35px;
+        padding: 0 8px;
         }
 }
 .price__course-pc {
