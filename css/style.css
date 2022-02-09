@@ -965,6 +965,11 @@ html {
   }
 }
 
+#recommend .inner .title h1 {
+  font-size: 40px;
+  color: #f59300;
+}
+
 #recommend .inner .title h2 {
   font-size: 1.2rem;
   padding-top: 1rem;
@@ -1150,6 +1155,8 @@ html {
 }
 
 #recommend .about .title span {
+  font-size: 40px;
+  color: #f59300;
   margin-top: -12px;
 }
 
@@ -1432,12 +1439,21 @@ html {
 #contents .contents-inner {
   background-color: #f7f7f7;
   margin: 100px 0 0 0;
-  padding-bottom: 80px;
+  padding: 80px 0;
+  position: relative;
+  z-index: -1;
 }
 
 #contents .title {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   height: 80px;
-  margin: 100px 0;
+  width: 100%;
   text-align: center;
   display: block;
 }
@@ -1462,10 +1478,10 @@ html {
 #contents .contents-img-area {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr  1fr;
-      grid-template-rows: 1fr  1fr;
-  -ms-grid-columns: 1fr  1fr;
-      grid-template-columns: 1fr  1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 2rem;
   gap: 2rem;
   width: 100%;

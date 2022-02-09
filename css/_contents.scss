@@ -1,46 +1,53 @@
 #contents {
-    padding-top:80px;
+    padding-top: 80px;
     @include mq(tab-l) {
         padding-top: 50px;
     }
     @include mq(sp) {
         padding-top: 0;
     }
-    .contents-inner{
+    .contents-inner {
         background-color: $bg-gray;
         margin: 100px 0 0 0;
-        padding-bottom: 80px;
+        padding: 80px 0;
+        position: relative;
+        z-index: -1;
     }
     .title {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         height: 80px;
-        margin: 100px 0;
+        width: 100%;
         text-align: center;
         display: block;
         @include mq(tab-l) {
-           
             margin-bottom: 50px;
-        @include mq(sp) {
-            margin-bottom: 0;
-        }
+            @include mq(sp) {
+                margin-bottom: 0;
+            }
         }
         img {
-            margin-top:-60px;
+            margin-top: -60px;
             height: 80px;
-            
         }
     }
     .contents-img-area {
         display: grid;
-        grid-template-rows: 1fr  1fr;
-        grid-template-columns: 1fr  1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         padding: 2rem;
-        @include mq(tab-l){
+        @include mq(tab-l) {
             grid-template-rows: 1fr;
-            grid-template-columns:  1fr;
+            grid-template-columns: 1fr;
             padding: 4rem;
-            gap:3rem;
+            gap: 3rem;
         }
-        @include mq(sp){
+        @include mq(sp) {
             padding: 2rem;
         }
         gap: 2rem;
@@ -49,26 +56,25 @@
             width: 100%;
         }
     }
-    .contents-btn{
+    .contents-btn {
         margin-top: -10px;
         margin-bottom: 80px;
         text-align: center;
-        a{
-           
-           @include gradient;
-           padding: 2rem 3rem;
-           color: #fff;
-           font-weight: bold;
-           font-size: 1.5em;
-           border-radius: 30px;
-           @include mq(sp) {
-               padding: 1rem 2rem;
-               font-size: 3.8vw;
-           }
+        a {
+            @include gradient;
+            padding: 2rem 3rem;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5em;
+            border-radius: 30px;
+            @include mq(sp) {
+                padding: 1rem 2rem;
+                font-size: 3.8vw;
+            }
         }
     }
-    .section__main-title {    
-        .sp{
+    .section__main-title {
+        .sp {
             display: none;
             @include mq(sp) {
                 display: block;
@@ -78,10 +84,10 @@
             &::before {
                 top: 40%;
                 width: 130%;
-            @include mq(sp) {
-                padding: 1.8rem;
+                @include mq(sp) {
+                    padding: 1.8rem;
+                }
             }
-            }
-      }
+        }
     }
 }
