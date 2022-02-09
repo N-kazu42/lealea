@@ -22,7 +22,7 @@
         @include mq(sp) {
             justify-content:flex-end;
             flex-direction: column;
-            height: auto;
+            height: 110px;
             padding: 0.5rem 0;
         }
 
@@ -75,14 +75,13 @@
            
         }
         @include mq(sp) {
-            height: 50%;
-            padding: 0;
-            margin: 10px 0;
+            height: 100%;
         }
         img {
             height: 100%;
             
             @include mq(sp) {
+                padding: 5px;
                 height: 100%;
                 width: auto;
             }

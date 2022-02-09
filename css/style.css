@@ -528,7 +528,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: auto;
+    height: 110px;
     padding: 0.5rem 0;
   }
 }
@@ -617,9 +617,7 @@ html {
 
 @media screen and (max-width: 480px) {
   .header .nav_logo {
-    height: 50%;
-    padding: 0;
-    margin: 10px 0;
+    height: 100%;
   }
 }
 
@@ -629,6 +627,7 @@ html {
 
 @media screen and (max-width: 480px) {
   .header .nav_logo img {
+    padding: 5px;
     height: 100%;
     width: auto;
   }
