@@ -14,6 +14,15 @@
     @include mq(sp) {
         margin: 0 auto 35px;
         }
+        //common.css上書きここから
+.section__main-title {
+    :last-child {
+        &::before {
+            width: 350%;
+        }
+    }
+  }
+  //common.css上書きここまで
 }
 .price__course {
     margin-bottom: 65px;

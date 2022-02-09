@@ -64,4 +64,21 @@
            }
         }
     }
+    .section__main-title {    
+        .sp{
+            display: none;
+            @include mq(sp) {
+                display: block;
+            }
+        }
+        :last-child {
+            &::before {
+                top: 40%;
+                width: 130%;
+            @include mq(sp) {
+                padding: 1.8rem;
+            }
+            }
+      }
+    }
 }

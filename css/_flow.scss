@@ -19,7 +19,7 @@
         }
 }
 .flow__title {
-    width: 268px;
+    // width: 268px;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -98,10 +98,10 @@
     text-align: center;
     a{
        @include gradient;
-       padding: 1rem 2.5vw;
+       padding: 1rem 1.2rem;
        color: #fff;
        font-weight: bold;
-       font-size: unquote('min(2vw, 24px)');
+       font-size: unquote('min(2vw, 21px)');
        border-radius: 30px;
        @include mq(tab) {
         padding: 2rem 2rem;

@@ -30,6 +30,15 @@
     @include mq(sp) {
         margin: 0 auto 80px;
         }
+                //common.css上書きここから
+.section__main-title {
+    :last-child {
+        &::before {
+            width: 220%;
+        }
+    }
+  }
+  //common.css上書きここまで
 }
 .voice__wrap {
     padding: 60px 90px 90px;

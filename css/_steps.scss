@@ -11,6 +11,9 @@
     .title {
         height: 80px;
         margin: 100px 0;
+        @include mq(sp) {
+            margin: 0;
+        }
         text-align: center;
         display: block;
         @include mq(tab-l) {
@@ -99,6 +102,9 @@
     }
     .last {
         position: relative;
+        @include mq(sp) {
+            margin-bottom: 3rem;
+        }
         &:before {
             content: "";
             position: absolute;
@@ -117,4 +123,29 @@
             }
         }
     }
+    .section__main-title {
+        .sp{
+            display: none;
+            @include mq(sp) {
+                display: block;
+            }
+        }
+        @include mq(sp) {
+            :first-child {
+                font-size: 30px;
+            }
+
+        }
+        :last-child {
+            &::before {
+                top: 40%;
+                width: 140%;
+                @include mq(sp){
+                    left:65%;
+                    padding: 1.8rem 3rem 1.8rem 1.8rem;
+                    width: 180%;
+                }
+            }
+      }
+      }
 }
