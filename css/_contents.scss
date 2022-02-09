@@ -17,8 +17,11 @@
         text-align: center;
         display: block;
         @include mq(tab-l) {
-            margin-bottom: 200px;
+           
             margin-bottom: 50px;
+        @include mq(sp) {
+            margin-bottom: 0;
+        }
         }
         img {
             margin-top:-60px;
