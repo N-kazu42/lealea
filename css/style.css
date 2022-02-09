@@ -970,6 +970,12 @@ html {
   color: #f59300;
 }
 
+@media screen and (max-width: 480px) {
+  #recommend .inner .title h1 {
+    font-size: 30px;
+  }
+}
+
 #recommend .inner .title h2 {
   font-size: 1.2rem;
   padding-top: 1rem;
@@ -1157,7 +1163,13 @@ html {
 #recommend .about .title span {
   font-size: 40px;
   color: #f59300;
-  margin-top: -12px;
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 480px) {
+  #recommend .about .title span {
+    font-size: 30px;
+  }
 }
 
 #recommend .about .title .horizon {

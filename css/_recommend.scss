@@ -16,7 +16,10 @@
                 margin: 0 auto;
             }
             h1{
-                font-size: 40px;  
+                font-size: 40px;
+                @include mq(sp){
+                    font-size:30px;
+                }
                 color: $base-color;
             }
             h2 {
@@ -129,8 +132,11 @@
             }
             span{
                 font-size: 40px;
+                @include mq(sp) {
+                    font-size: 30px;
+                }
                 color:$base-color;
-                margin-top: -12px;
+                margin-top: -20px;
             }
             .horizon{
                 width: 80%;
