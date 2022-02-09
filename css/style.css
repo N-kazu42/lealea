@@ -617,7 +617,7 @@ html {
 
 @media screen and (max-width: 480px) {
   .header .nav_logo {
-    height: 100%;
+    height: 50%;
   }
 }
 
