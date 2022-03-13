@@ -49,6 +49,39 @@
 .price__comparison-table {
     margin-bottom: 78px;
     overflow-x: scroll;
+    .table{
+        width:880px;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(.9);
+        
+    }
+    ul{
+       width: 195px;
+       :first-child{
+         background-color: #CCCCCC;
+       }
+    }
+    li{
+        height: 35px;
+        border: 0.7px solid rgb(216, 203, 203);
+        margin: auto;
+        width: 195px;
+        line-height: 35px;
+    }
+    .highlight{
+        background-color:#FAAE40;
+        color:#fff;
+        line-height:150%;
+        transform: scale(1.05);
+        :first-child{
+            background-color:#F48300;
+        }
+    }
+
     img {
         min-width: 880px;
     }

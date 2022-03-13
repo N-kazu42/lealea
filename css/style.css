@@ -2139,6 +2139,51 @@ html {
   overflow-x: scroll;
 }
 
+.price__comparison-table .table {
+  width: 880px;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.price__comparison-table ul {
+  width: 195px;
+}
+
+.price__comparison-table ul :first-child {
+  background-color: #CCCCCC;
+}
+
+.price__comparison-table li {
+  height: 35px;
+  border: 0.7px solid #d8cbcb;
+  margin: auto;
+  width: 195px;
+  line-height: 35px;
+}
+
+.price__comparison-table .highlight {
+  background-color: #FAAE40;
+  color: #fff;
+  line-height: 150%;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.price__comparison-table .highlight :first-child {
+  background-color: #F48300;
+}
+
 .price__comparison-table img {
   min-width: 880px;
 }
