@@ -44,7 +44,7 @@
     padding: 60px 90px 90px;
     margin: 0 auto 90px;
     max-width: 1200px;
-    background-color:#fff;
+    // background-color:#fff;
     border-radius: 30px;
     // height: 1000px;
     @include mq(pc) {
@@ -60,19 +60,46 @@
         }
 }
 .voice__article {
-    position: absolute;
-    top: -4%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 717px;
-    @include mq(tab) {
-        max-width: 100%;
-        padding: 0 16px;
-        top: -5%;
+    // position: absolute;
+    // top: -4%;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // width: 717px;
+    // @include mq(tab) {
+    //     max-width: 100%;
+    //     padding: 0 16px;
+    //     top: -5%;
+    // }
+    // @include mq(sp) {
+    //     top: -3.5%;
+    // }
+
+    display: flex;
+    width: 100%;
+    padding: 2rem ;
+    background-color: #fff;
+    border-radius:2rem;
+    margin-bottom: 2rem;
+    .voice_img {
+        text-align: center;
+        width: 35%;
+        border-right: 1px solid #000;
+        font-size: 1.2rem;
     }
-    @include mq(sp) {
-        top: -3.5%;
+    .voice_text {
+        text-align:left;
+        margin-left:2rem;
     }
+    .voice_title{
+        font-size: 3rem;
+        font-weight: bold;
+        color:#FF7F4A;
+        padding-bottom: 1.5rem;
+    }
+    .voice_comment{
+        font-size: 1.5rem;
+    }
+
 }
 .voice__examples {
     width: 100%;

@@ -2142,18 +2142,21 @@ html {
 .price__comparison-table .table {
   width: 880px;
   text-align: center;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .price__comparison-table .table {
+    margin-left: 1rem;
+  }
 }
 
 .price__comparison-table ul {
@@ -2283,7 +2286,6 @@ html {
   padding: 60px 90px 90px;
   margin: 0 auto 90px;
   max-width: 1200px;
-  background-color: #fff;
   border-radius: 30px;
 }
 
@@ -2308,26 +2310,37 @@ html {
 }
 
 .voice__article {
-  position: absolute;
-  top: -4%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 717px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .voice__article {
-    max-width: 100%;
-    padding: 0 16px;
-    top: -5%;
-  }
+.voice__article .voice_img {
+  text-align: center;
+  width: 35%;
+  border-right: 1px solid #000;
+  font-size: 1.2rem;
 }
 
-@media screen and (max-width: 480px) {
-  .voice__article {
-    top: -3.5%;
-  }
+.voice__article .voice_text {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.voice__article .voice_title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FF7F4A;
+  padding-bottom: 1.5rem;
+}
+
+.voice__article .voice_comment {
+  font-size: 1.5rem;
 }
 
 .voice__examples {
