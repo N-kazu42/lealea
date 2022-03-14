@@ -2328,15 +2328,10 @@ html {
 
 .voice__article .voice_img {
   text-align: center;
-  width: 35%;
+  width: 20%;
   border-right: 1px solid #000;
   font-size: 1.2rem;
-}
-
-@media screen and (max-width: 480px) {
-  .voice__article .voice_img {
-    width: 100%;
-  }
+  padding: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -2348,10 +2343,11 @@ html {
 .voice__article .voice_text {
   text-align: left;
   margin-left: 2rem;
+  width: 80%;
 }
 
 .voice__article .voice_title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #FF7F4A;
   padding-bottom: 1.5rem;

@@ -85,12 +85,10 @@
     margin-bottom: 2rem;
     .voice_img {
         text-align: center;
-        width: 35%;
-        @include mq(sp) {
-            width: 100%;
-        }
+        width: 20%;
         border-right: 1px solid #000;
         font-size: 1.2rem;
+        padding:1rem;
         @include mq(tab) {
             font-size: 0.8rem;
         }
@@ -98,9 +96,10 @@
     .voice_text {
         text-align:left;
         margin-left:2rem;
+        width: 80%;
     }
     .voice_title{
-        font-size: 3rem;
+        font-size: 2.5rem;
         @include mq(tab) {
             font-size: 2rem;
         }
