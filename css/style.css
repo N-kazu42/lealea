@@ -2320,11 +2320,29 @@ html {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .voice__article {
+    padding: 1rem;
+  }
+}
+
 .voice__article .voice_img {
   text-align: center;
   width: 35%;
   border-right: 1px solid #000;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .voice__article .voice_img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .voice__article .voice_img {
+    font-size: 0.8rem;
+  }
 }
 
 .voice__article .voice_text {
@@ -2339,8 +2357,26 @@ html {
   padding-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .voice__article .voice_title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .voice__article .voice_title {
+    font-size: 1.5rem;
+  }
+}
+
 .voice__article .voice_comment {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .voice__article .voice_comment {
+    font-size: 1rem;
+  }
 }
 
 .voice__examples {
@@ -2441,23 +2477,13 @@ html {
 }
 
 .nutritionist__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin: 0 auto;
   max-width: 850px;
 }
 
 .nutritionist__img img {
-  height: 306px;
+  width: 100%;
   padding-left: 16px;
-}
-
-.nutritionist__img img:first-child {
-  margin-right: -16px;
-  padding-left: 0;
 }
 
 @media screen and (max-width: 845px) {

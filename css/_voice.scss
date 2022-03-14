@@ -77,14 +77,23 @@
     display: flex;
     width: 100%;
     padding: 2rem ;
+    @include mq(tab) {
+        padding: 1rem;
+    }
     background-color: #fff;
     border-radius:2rem;
     margin-bottom: 2rem;
     .voice_img {
         text-align: center;
         width: 35%;
+        @include mq(sp) {
+            width: 100%;
+        }
         border-right: 1px solid #000;
         font-size: 1.2rem;
+        @include mq(tab) {
+            font-size: 0.8rem;
+        }
     }
     .voice_text {
         text-align:left;
@@ -92,12 +101,21 @@
     }
     .voice_title{
         font-size: 3rem;
+        @include mq(tab) {
+            font-size: 2rem;
+        }
+        @include mq(sp) {
+            font-size: 1.5rem;
+        }
         font-weight: bold;
         color:#FF7F4A;
         padding-bottom: 1.5rem;
     }
     .voice_comment{
         font-size: 1.5rem;
+        @include mq(tab) {
+            font-size: 1rem;
+        }
     }
 
 }

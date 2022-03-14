@@ -50,18 +50,19 @@
     }
 }
 .nutritionist__img {
-    display: flex;
-    justify-content:space-around;
+    // display: flex;
+    // justify-content:space-around;
     margin: 0 auto;
     max-width:850px;
     img {
-        height: 306px;
+        // height: 306px;
+        width: 100%;
         padding-left:16px ;
     }
-    img:first-child {
-        margin-right: -16px;
-        padding-left:0 ;
-    }
+    // img:first-child {
+    //     margin-right: -16px;
+    //     padding-left:0 ;
+    // }
 }
 @media screen and ( max-width:845px ) {
     .nutritionist__img {
