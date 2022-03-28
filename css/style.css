@@ -623,6 +623,11 @@ html {
   }
 }
 
+.header .btn-fixed {
+  position: fixed;
+  z-index: 3;
+}
+
 .header .hamburger-menu {
   display: none;
   background-color: #6c6c6c;

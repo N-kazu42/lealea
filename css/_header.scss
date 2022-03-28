@@ -87,6 +87,10 @@
             }
         }
     }
+    .btn-fixed{
+        position:fixed;
+        z-index: 3;
+    }
     // ハンバーガーメニュー
     .hamburger-menu {
         display: none;
