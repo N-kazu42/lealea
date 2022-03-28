@@ -2510,7 +2510,7 @@ html {
           align-items: center;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  margin-left: 3rem;
+  margin-left: 6rem;
 }
 
 @media screen and (max-width: 768px) {
