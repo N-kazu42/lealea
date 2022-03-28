@@ -61,7 +61,7 @@
                 }
                 @include mq(sp) {
                     font-size: 3.3vw;
-                    width: 60%;
+                    width: 50%;
                     margin-left: 5px;
                 }
                 
@@ -90,6 +90,7 @@
     .btn-fixed{
         position:fixed;
         z-index: 3;
+        right: 60px;
     }
     // ハンバーガーメニュー
     .hamburger-menu {
