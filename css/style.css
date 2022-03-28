@@ -500,7 +500,7 @@ html {
 }
 
 .header .inner {
-  height: 60px;
+  height: 85px;
   width: 100%;
   display: -webkit-box;
   display: flex;
@@ -515,7 +515,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .header .inner {
-    height: 45px;
+    height: 55px;
   }
 }
 
@@ -605,15 +605,9 @@ html {
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .header .nav_logo {
-    width: 25%;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .header .nav_logo {
-    height: 50%;
+    height: 80%;
   }
 }
 
@@ -2789,10 +2783,19 @@ html {
   margin-bottom: 12px;
 }
 
-.nutritionist__introduction span {
+.nutritionist__introduction .nutritionist__subtitle {
   margin-bottom: 40px;
   display: block;
   text-align: center;
+}
+
+.nutritionist__introduction h4 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.nutritionist__introduction h4 span {
+  display: inline-block;
 }
 
 .nutritionist__img {
@@ -2887,67 +2890,15 @@ html {
   text-align: left;
 }
 
-.others__item::before {
-  position: absolute;
-  content: "";
-  top: -50px;
-  left: 0;
-  background-color: #999;
-  width: 1px;
-  height: calc(100% + 50px);
-}
-
-.others__item:nth-child(1)::before, .others__item:nth-child(4)::before {
-  content: none;
-}
-
-.others__item::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  background-color: #999;
-  width: 100%;
-  height: 1px;
-}
-
-.others__item:nth-child(n + 4)::after {
-  content: none;
-}
-
 @media screen and (max-width: 768px) {
   .others__item {
     width: 280px;
   }
 }
 
-@media screen and (max-width: 1079px) {
-  .others__item:nth-child(1)::before, .others__item:nth-child(4)::before {
-    content: "";
-  }
-  .others__item:nth-child(odd)::before {
-    content: none;
-  }
-  .others__item:nth-child(n + 4)::after {
-    content: "";
-  }
-  .others__item:nth-child(n + 5)::after {
-    content: none;
-  }
-}
-
 @media screen and (max-width: 560px) {
   .others__item {
     width: 80%;
-  }
-  .others__item:nth-child(n):before {
-    content: none;
-  }
-  .others__item:nth-child(n + 4)::after {
-    content: "";
-  }
-  .others__item:last-child::after {
-    content: none;
   }
 }
 

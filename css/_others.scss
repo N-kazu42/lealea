@@ -1,133 +1,82 @@
 .sec__others {
-    background-color: $bg-gray;
-    padding: 80px 0 130px;
-    // margin-bottom: 94px;
-    text-align: center;
-    @include mq(sp) {
-        padding: 80px 0;
-    }
+  background-color: $bg-gray;
+  padding: 80px 0 130px;
+  // margin-bottom: 94px;
+  text-align: center;
+  @include mq(sp) {
+    padding: 80px 0;
+  }
 }
 .others__title {
-    h3 {
-        font-size: 2.5rem;
-        color: $base-color;
-        text-align: center;
-        margin-bottom: 12px;
-    }
-    span {
-        margin-bottom: 40px;
-        display: block;
-        text-align: center;
-    }
+  h3 {
+    font-size: 2.5rem;
+    color: $base-color;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  span {
+    margin-bottom: 40px;
+    display: block;
+    text-align: center;
+  }
 }
 .others__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 90px;
-    max-width: 1082px;
-    @include mq(sp) {
-        margin: 0 auto 16px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 90px;
+  max-width: 1082px;
+  @include mq(sp) {
+    margin: 0 auto 16px;
+  }
 }
 .others__item {
-    position: relative;
-    margin-top: 50px;
-    width: 360px;
-    height: 470px;
-    img {
-        margin-bottom: 34px;
-        width: 227px;
-    }
-    h4 {
-        margin-bottom: 24px;
-        font-size: 18px;
-        font-weight: bold;
-        color: $base-color;
-    }
-    p {
-        margin: 0 auto;
-        width: 247px;
-        text-align: left;
-    }
-    &::before {
-        position: absolute;
-        content: "";
-        top: -50px;
-        left: 0;
-        background-color: #999;
-        width: 1px;
-        height: calc(100% + 50px);
-        
-    }
-    &:nth-child(1)::before,
-    &:nth-child(4)::before {
-        content: none;
-    }
-    &::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
-        background-color: #999;
-        width: 100%;
-        height: 1px;
-    }
-    &:nth-child(n + 4)::after {
-        content: none;
-    }
+  position: relative;
+  margin-top: 50px;
+  width: 360px;
+  height: 470px;
+  img {
+    margin-bottom: 34px;
+    width: 227px;
+  }
+  h4 {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $base-color;
+  }
+  p {
+    margin: 0 auto;
+    width: 247px;
+    text-align: left;
+  }
+
+  @include mq(tab) {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .others__item {
+    width: 80%;
+  }
+}
+.others-btn {
+  text-align: center;
+  a {
+    @include gradient;
+    padding: 2rem 3rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 30px;
     @include mq(tab) {
-        width: 280px;
+      padding: 2rem 3rem;
+      font-size: 3.5vw;
     }
-}
-@media screen and (max-width:1079px){
-    .others__item {
-        &:nth-child(1)::before,
-        &:nth-child(4)::before {
-            content: "";
-        }
-        &:nth-child(odd)::before {
-            content: none;
-        }
-        &:nth-child(n + 4)::after {
-            content: "";
-        }
-        &:nth-child(n + 5)::after {
-            content: none;
-        }
-        }
+    @include mq(sp) {
+      padding: 1rem 1rem;
+      font-size: 4vw;
     }
-@media screen and (max-width:560px){
-    .others__item {
-        width: 80%;
-        &:nth-child(n):before {
-            content: none;
-        }
-        &:nth-child(n + 4)::after {
-            content: "";
-        }
-        &:last-child::after {
-            content: none;
-        }
-    }
-}
-.others-btn{
-    text-align: center;
-    a{
-       @include gradient;
-       padding: 2rem 3rem;
-       color: #fff;
-       font-weight: bold;
-       font-size: 1.5em;
-       border-radius: 30px;
-       @include mq(tab) {
-        padding: 2rem 3rem;
-        font-size: 3.5vw;
-        }
-        @include mq(sp) {
-            padding: 1rem 1rem;
-            font-size: 4vw;
-        }
-    }
+  }
 }

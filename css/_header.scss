@@ -13,11 +13,11 @@
     }
 
     .inner {
-        height: 60px;
+        height: 85px;
         width: 100%;
         @include flex();
         @include mq(tab) {
-            height: 45px;
+            height: 55px;
         }
         @include mq(sp) {
             justify-content:flex-end;
@@ -70,12 +70,12 @@
     }
     .nav_logo {
         height: 100%;
-        @include mq(tab) {
-            width: 25%;
+        // @include mq(tab) {
+        //     width: 25%;
            
-        }
+        // }
         @include mq(sp) {
-            height: 50%;
+            height: 80%;
         }
         img {
             height: 100%;
