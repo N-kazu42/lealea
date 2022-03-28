@@ -48,7 +48,7 @@
             gap: 3rem;
         }
         @include mq(sp) {
-            padding: 2rem;
+            padding: 1rem;
         }
         gap: 2rem;
         width: 100%;
@@ -85,8 +85,9 @@
         :last-child {
             &::before {
                 top: 40%;
-                width: 130%;
+                width: 110%;
                 @include mq(sp) {
+                    width: 130%;
                     padding: 1.8rem;
                 }
             }

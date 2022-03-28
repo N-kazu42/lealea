@@ -12,11 +12,11 @@
             padding: 140px 16px 100px;
         }
         @include mq(tab) {
-            padding: 100px 0 100px;
+            padding: 100px 16px 100px;
             margin-bottom: 60px;
         }
         @include mq(sp) {
-            padding: 50px 0px 60px;
+            padding: 50px 16px 60px;
             margin-bottom: 0;
             }
     }

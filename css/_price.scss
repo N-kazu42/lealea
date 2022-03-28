@@ -10,7 +10,7 @@
 }
 .price__title {
     max-width: 268px;
-    margin: 0 auto 48px;
+    margin: 0 auto 120px;
     @include mq(sp) {
         margin: 0 auto 35px;
         }
@@ -50,7 +50,7 @@
     margin-bottom: 78px;
     overflow-x: scroll;
     .table{
-        width:880px;
+        width:975px;
         text-align: center;
         
         display: flex;
@@ -77,12 +77,22 @@
         line-height: 35px;
     }
     .highlight{
+        width: 390px;
         background-color:#FAAE40;
         color:#fff;
         line-height:150%;
-        transform: scale(1.05);
+        transform: scaleY(1.05);
         :first-child{
             background-color:#F48300;
+        }
+        li{
+            font-weight: bold;
+            font-size: 1.1rem;
+            height: 35px;
+            border: 0.7px solid rgb(216, 203, 203);
+            margin: auto;
+            width: 390px;
+            line-height: 35px;
         }
     }
 

@@ -21,7 +21,7 @@
 .flow__title {
     // width: 268px;
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 40px;
@@ -37,7 +37,8 @@
 .flow__wrap {
     background-color:#fff;
     border-radius: 30px;
-    padding: 60px 40px;
+    padding: 120px 40px;
+    margin-top: 40px;
     @include mq(tab) {
         padding: 60px 16px;
         }
@@ -115,7 +116,7 @@
 }
 .flow__step {
     // @include mq(tab-l) {
-        overflow-x: scroll;
+        overflow-x: auto;
     // }
     @include mq(sp) {
         padding: 0 8px;

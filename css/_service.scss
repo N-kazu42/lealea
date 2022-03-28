@@ -10,6 +10,18 @@
         img {
             height: 100%;
         }
+        h3 {
+            font-size: 60px;
+            font-size: clamp(28px, 5.45vw, 60px);
+            text-align: center;
+            color: $base-color;
+            font-family: 'M PLUS 1p', sans-serif;
+            font-weight: 700;
+            margin-bottom: 40px;
+            span {
+                display: inline-block;
+            }
+        }
     }
     .service-wrap {
         .service-contents {
@@ -39,7 +51,7 @@
                 @include mq(tab-l) {
                     height: 35vw;
                     width: 35vw;
-                    margin-top: -10rem;
+                    margin-top: -6rem;
                 }
             }
             img {
