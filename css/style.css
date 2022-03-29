@@ -499,9 +499,11 @@ html {
   }
 }
 
-.header .inner {
+.header .header-inner {
   height: 85px;
   width: 100%;
+  background-color: #fff;
+  opacity: 0.8;
   display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
@@ -514,13 +516,13 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  .header .inner {
+  .header .header-inner {
     height: 55px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .header .inner {
+  .header .header-inner {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -529,7 +531,7 @@ html {
   }
 }
 
-.header .inner .nav_telphon_button {
+.header .header-inner .nav_telphon_button {
   display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
@@ -539,35 +541,36 @@ html {
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  padding-right: 2rem;
   color: #fff;
 }
 
 @media screen and (max-width: 480px) {
-  .header .inner .nav_telphon_button {
+  .header .header-inner .nav_telphon_button {
     width: 100%;
     height: 50%;
   }
 }
 
-.header .inner .nav_telphon_button img {
+.header .header-inner .nav_telphon_button img {
   height: 25px;
   padding-right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .header .inner .nav_telphon_button img {
+  .header .header-inner .nav_telphon_button img {
     height: 3vw;
     padding-right: 0.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .header .inner .nav_telphon_button img {
+  .header .header-inner .nav_telphon_button img {
     padding-right: 2px;
   }
 }
 
-.header .inner .nav_telphon_button a {
+.header .header-inner .nav_telphon_button a {
   display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
@@ -585,7 +588,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  .header .inner .nav_telphon_button a {
+  .header .header-inner .nav_telphon_button a {
     height: 45px;
     width: 30vw;
     font-size: 2vw;
@@ -594,7 +597,7 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-  .header .inner .nav_telphon_button a {
+  .header .header-inner .nav_telphon_button a {
     font-size: 3.3vw;
     width: 60%;
     margin-left: 5px;
@@ -613,6 +616,7 @@ html {
 
 .header .nav_logo img {
   height: 100%;
+  left: 20%;
 }
 
 @media screen and (max-width: 480px) {
@@ -626,6 +630,7 @@ html {
 .header .btn-fixed {
   position: fixed;
   z-index: 3;
+  padding: 0;
 }
 
 .header .hamburger-menu {
@@ -2237,7 +2242,7 @@ html {
   /* 文字のサイズ */
   letter-spacing: 4px;
   /* 文字間 */
-  text-shadow: 1px  1px 1px #fff, -1px  1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px  0px 1px #fff, 0px  1px 1px #fff, -1px  0px 1px #fff, 0px -1px 1px #fff;
+  text-shadow: 1px  1px 1px #fff, -1px  1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff, 1px  0px 1px #fff, 0px  1px 1px #fff, -1px  0px 1px #fff, 0px -1px 1px #fff;
   /* 文字の影 */
 }
 
