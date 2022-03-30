@@ -1,15 +1,14 @@
 //logo
 .header {
-    height: 100px;
+    height: 85px;
     @include flex();
-    padding: 0 2rem;
     @include mq(tab) {
         height: 60px;
-        padding: 0.5rem;
+       
     }
     @include mq(sp) {
         height: 100px;
-        padding: 0.5rem;
+        
     }
 
     .header-inner {
@@ -94,7 +93,7 @@
         position:fixed;
         z-index: 3;
         padding: 0;
-       
+        top: 0;
     }
     // ハンバーガーメニュー
     .hamburger-menu {
